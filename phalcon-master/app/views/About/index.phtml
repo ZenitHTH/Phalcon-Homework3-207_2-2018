@@ -1,0 +1,11 @@
+<?php echo $this->assets->outputCss('mystyles'); ?>
+<?php echo $this->assets->outputJs('scripts'); ?>
+
+
+<section class="content-section bg-light" id="about">
+    <div class="container">
+            <img class="img-fluid mb-5 d-block mx-auto" src="<?php echo $this->url->getBaseUri(); ?>public/img/<?php echo $this->session->get("proPicture")?>" alt="">
+            <h2 class="text-uppercase mb-0  text-center"><p class="text-dark"><?php echo $this->session->get("proName")?></p></h2>
+            <h6 class="text-uppercase mb-0  text-center"><p class="text-dark"><?php echo $this->session->get("proEmail")?></p></h6>
+    </div>
+</section>
